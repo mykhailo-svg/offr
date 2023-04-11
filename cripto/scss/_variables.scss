@@ -1,0 +1,27 @@
+$headerMenu: #fff;
+$background: #1E1C1D;
+$button: #F49F1C;
+
+
+$bp-md: 600px;
+$bp-lg: 800px;
+$bar-width: 100px;
+$bar-height: 10px;
+$bar-spacing: 25px;     
+
+$imageIds: '1517021897933-0e0319cfbc28', '1533903345306-15d1c30952de', '1545243424-0ce743321e11', '1531306728370-e2ebd9d7bb99';
+
+$desktopWidth: 1700px;
+$tabletMidWidth: 1400px;
+$tabletWidth: 1130px;
+$mobileWidth: 768px;
+
+@mixin primaryFont($fontSize, $lineHeight, $fontWeight) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+}
+
+@mixin borderRadius($radius) {
+    border-radius: $radius;
+}

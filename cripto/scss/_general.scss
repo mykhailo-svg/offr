@@ -1,0 +1,70 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Nunito Sans', sans-serif;
+    // font-family: 'Cera Pro', sans-serif;
+    // font-family: 'SF Pro Text', sans-serif;
+    font-style: normal;
+    @include primaryFont(14px, 17px, 500);
+    background-color: $background;
+    overflow-x: hidden;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.header-container {
+    width: 1110px;
+    margin: 0 auto;
+}
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+.illustration {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: $tabletWidth) {
+    .header-container {
+        width: 82.7%;
+    }
+    .container {
+        width: 82.7%;
+    }
+}
+@media screen and (max-width: $mobileWidth) {
+    .header-container {
+        width: 91.7%;
+    }
+    .container {
+        width: 91.7%;
+    }
+}
